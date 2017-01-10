@@ -1,0 +1,20 @@
+//
+//  Prefix.pch
+//  TaiwanPuzzle2
+//
+//  Created by user on 2016/12/9.
+//  Copyright © 2016年 LiChen. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+#import "MainView.h" 
+#import "SideMenu.h"
+#import "CityModel.h" 
+#import "Init.h" 
+#import "MMDrawerBarButtonItem.h"
+#import "UIViewController+MMDrawerController.h"
+#import <CoreLocation/CoreLocation.h>
+
+#endif

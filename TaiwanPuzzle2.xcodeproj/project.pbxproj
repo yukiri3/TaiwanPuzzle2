@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0ADADD6BD16825A3503D28A /* Pods_TaiwanPuzzle2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE85A499A3C7641E536F6A7B /* Pods_TaiwanPuzzle2.framework */; };
+		CE8E81901DF9695D00CC6EC4 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E818F1DF9695D00CC6EC4 /* MainView.m */; };
+		CE9A0A771DFA7812002564F0 /* CityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE9A0A761DFA7812002564F0 /* CityList.plist */; };
+		CE9A0A811DFAA7B5002564F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9A0A801DFAA7B5002564F0 /* UIKit.framework */; };
+		CE9A0A831DFAA7C2002564F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9A0A821DFAA7C2002564F0 /* CoreGraphics.framework */; };
+		CE9A0A851DFAA7CB002564F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9A0A841DFAA7CB002564F0 /* Foundation.framework */; };
+		CE9A0A8F1DFAAE39002564F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE9A0A8E1DFAAE39002564F0 /* GoogleService-Info.plist */; };
+		CE9A0A971DFABEDA002564F0 /* g3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9A0A961DFABEDA002564F0 /* g3.png */; };
+		CE9A84371DE44D31008EBE9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9A84361DE44D31008EBE9C /* main.m */; };
+		CE9A843A1DE44D31008EBE9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9A84391DE44D31008EBE9C /* AppDelegate.m */; };
+		CE9A84401DE44D31008EBE9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9A843E1DE44D31008EBE9C /* Main.storyboard */; };
+		CE9A84421DE44D31008EBE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9A84411DE44D31008EBE9C /* Assets.xcassets */; };
+		CE9A84451DE44D31008EBE9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9A84431DE44D31008EBE9C /* LaunchScreen.storyboard */; };
+		CE9A84511DE45088008EBE9C /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9A84501DE45088008EBE9C /* SideMenu.storyboard */; };
+		CE9A84541DE450D1008EBE9C /* SideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9A84531DE450D1008EBE9C /* SideMenu.m */; };
+		CE9A84571DE45159008EBE9C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9A84561DE45159008EBE9C /* CoreLocation.framework */; };
+		CE9A845A1DE452D2008EBE9C /* Init.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9A84591DE452D2008EBE9C /* Init.m */; };
+		CEBA6FC01E1F813A0094431C /* CityGame.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6FBF1E1F813A0094431C /* CityGame.m */; };
+		CEBA6FC21E1F81550094431C /* CityGame.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEBA6FC11E1F81550094431C /* CityGame.sks */; };
+		CEBA6FC51E1F82330094431C /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6FC41E1F82330094431C /* GameViewController.m */; };
+		CEBA6FC71E1F841C0094431C /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBA6FC61E1F841C0094431C /* SpriteKit.framework */; };
+		CEBA6FCF1E1FACCE0094431C /* BackgroundSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEBA6FC91E1FACCE0094431C /* BackgroundSound.mp3 */; };
+		CEBA6FD01E1FACCE0094431C /* No.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEBA6FCA1E1FACCE0094431C /* No.mp3 */; };
+		CEBA6FD11E1FACCE0094431C /* Result.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEBA6FCB1E1FACCE0094431C /* Result.mp3 */; };
+		CEBA6FD21E1FACCE0094431C /* ResultUp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEBA6FCC1E1FACCE0094431C /* ResultUp.mp3 */; };
+		CEBA6FD31E1FACCE0094431C /* StartGame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEBA6FCD1E1FACCE0094431C /* StartGame.mp3 */; };
+		CEBA6FD41E1FACCE0094431C /* Yes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEBA6FCE1E1FACCE0094431C /* Yes.mp3 */; };
+		CEBA6FD71E1FAF560094431C /* CityGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6FD61E1FAF560094431C /* CityGameViewController.m */; };
+		CECC58011DFAC32C009D6A0D /* Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = CECC57FF1DFAC32C009D6A0D /* Slice.png */; };
+		CECC58021DFAC32C009D6A0D /* Slice2.png in Resources */ = {isa = PBXBuildFile; fileRef = CECC58001DFAC32C009D6A0D /* Slice2.png */; };
+		CED8EF6E1DFA615D00DD3D61 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CED8EF6D1DFA615D00DD3D61 /* CityModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D23B7EB3978FAC770706460 /* Pods-TaiwanPuzzle2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiwanPuzzle2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaiwanPuzzle2/Pods-TaiwanPuzzle2.debug.xcconfig"; sourceTree = "<group>"; };
+		54D2AC003C98871184163FA3 /* Pods-TaiwanPuzzle2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiwanPuzzle2.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaiwanPuzzle2/Pods-TaiwanPuzzle2.release.xcconfig"; sourceTree = "<group>"; };
+		BE85A499A3C7641E536F6A7B /* Pods_TaiwanPuzzle2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaiwanPuzzle2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8E818E1DF9695D00CC6EC4 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainView.h; path = Main/MainView.h; sourceTree = "<group>"; };
+		CE8E818F1DF9695D00CC6EC4 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainView.m; path = Main/MainView.m; sourceTree = "<group>"; };
+		CE9A0A761DFA7812002564F0 /* CityList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CityList.plist; path = Model/CityList.plist; sourceTree = "<group>"; };
+		CE9A0A801DFAA7B5002564F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE9A0A821DFAA7C2002564F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE9A0A841DFAA7CB002564F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE9A0A8E1DFAAE39002564F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE9A0A961DFABEDA002564F0 /* g3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = g3.png; sourceTree = "<group>"; };
+		CE9A84321DE44D31008EBE9C /* TaiwanPuzzle2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaiwanPuzzle2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9A84361DE44D31008EBE9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE9A84381DE44D31008EBE9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE9A84391DE44D31008EBE9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE9A843F1DE44D31008EBE9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE9A84411DE44D31008EBE9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE9A84441DE44D31008EBE9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE9A84461DE44D31008EBE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9A84501DE45088008EBE9C /* SideMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SideMenu.storyboard; path = SideMenu/SideMenu.storyboard; sourceTree = "<group>"; };
+		CE9A84521DE450D1008EBE9C /* SideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideMenu.h; path = SideMenu/SideMenu.h; sourceTree = "<group>"; };
+		CE9A84531DE450D1008EBE9C /* SideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SideMenu.m; path = SideMenu/SideMenu.m; sourceTree = "<group>"; };
+		CE9A84561DE45159008EBE9C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CE9A84581DE452D2008EBE9C /* Init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Init.h; sourceTree = "<group>"; };
+		CE9A84591DE452D2008EBE9C /* Init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Init.m; sourceTree = "<group>"; };
+		CEBA6FBE1E1F813A0094431C /* CityGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityGame.h; path = CityGame/CityGame.h; sourceTree = "<group>"; };
+		CEBA6FBF1E1F813A0094431C /* CityGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityGame.m; path = CityGame/CityGame.m; sourceTree = "<group>"; };
+		CEBA6FC11E1F81550094431C /* CityGame.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CityGame.sks; sourceTree = "<group>"; };
+		CEBA6FC31E1F82330094431C /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = CityGame/GameViewController.h; sourceTree = "<group>"; };
+		CEBA6FC41E1F82330094431C /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = CityGame/GameViewController.m; sourceTree = "<group>"; };
+		CEBA6FC61E1F841C0094431C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		CEBA6FC91E1FACCE0094431C /* BackgroundSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackgroundSound.mp3; sourceTree = "<group>"; };
+		CEBA6FCA1E1FACCE0094431C /* No.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = No.mp3; sourceTree = "<group>"; };
+		CEBA6FCB1E1FACCE0094431C /* Result.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Result.mp3; sourceTree = "<group>"; };
+		CEBA6FCC1E1FACCE0094431C /* ResultUp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ResultUp.mp3; sourceTree = "<group>"; };
+		CEBA6FCD1E1FACCE0094431C /* StartGame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StartGame.mp3; sourceTree = "<group>"; };
+		CEBA6FCE1E1FACCE0094431C /* Yes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Yes.mp3; sourceTree = "<group>"; };
+		CEBA6FD51E1FAF560094431C /* CityGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityGameViewController.h; path = CityGame/CityGameViewController.h; sourceTree = "<group>"; };
+		CEBA6FD61E1FAF560094431C /* CityGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityGameViewController.m; path = CityGame/CityGameViewController.m; sourceTree = "<group>"; };
+		CECC57FF1DFAC32C009D6A0D /* Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slice.png; sourceTree = "<group>"; };
+		CECC58001DFAC32C009D6A0D /* Slice2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slice2.png; sourceTree = "<group>"; };
+		CED8EF6C1DFA615D00DD3D61 /* CityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityModel.h; path = Model/CityModel.h; sourceTree = "<group>"; };
+		CED8EF6D1DFA615D00DD3D61 /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityModel.m; path = Model/CityModel.m; sourceTree = "<group>"; };
+		CED8EF6F1DFA630700DD3D61 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE9A842F1DE44D31008EBE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBA6FC71E1F841C0094431C /* SpriteKit.framework in Frameworks */,
+				CE9A0A851DFAA7CB002564F0 /* Foundation.framework in Frameworks */,
+				CE9A0A831DFAA7C2002564F0 /* CoreGraphics.framework in Frameworks */,
+				CE9A0A811DFAA7B5002564F0 /* UIKit.framework in Frameworks */,
+				CE9A84571DE45159008EBE9C /* CoreLocation.framework in Frameworks */,
+				C0ADADD6BD16825A3503D28A /* Pods_TaiwanPuzzle2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DA7B227DF7F3B05C92830D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D23B7EB3978FAC770706460 /* Pods-TaiwanPuzzle2.debug.xcconfig */,
+				54D2AC003C98871184163FA3 /* Pods-TaiwanPuzzle2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE9A0A861DFAADF9002564F0 /* ChatModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ChatModel;
+			sourceTree = "<group>";
+		};
+		CE9A84291DE44D31008EBE9C = {
+			isa = PBXGroup;
+			children = (
+				CE9A84341DE44D31008EBE9C /* TaiwanPuzzle2 */,
+				CE9A84331DE44D31008EBE9C /* Products */,
+				CE9A84551DE45159008EBE9C /* Frameworks */,
+				2DA7B227DF7F3B05C92830D6 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		CE9A84331DE44D31008EBE9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE9A84321DE44D31008EBE9C /* TaiwanPuzzle2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE9A84341DE44D31008EBE9C /* TaiwanPuzzle2 */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA6FC81E1FACB40094431C /* Sound */,
+				CEBA6FBD1E1F80FD0094431C /* CityGame */,
+				CEBA6FBC1E1F68340094431C /* img */,
+				CE9A0A861DFAADF9002564F0 /* ChatModel */,
+				CE9A84581DE452D2008EBE9C /* Init.h */,
+				CE9A84591DE452D2008EBE9C /* Init.m */,
+				CED8EF6B1DFA60FE00DD3D61 /* Model */,
+				CE9A844F1DE44F78008EBE9C /* iHavaNeverBeenTo */,
+				CE9A844E1DE44F06008EBE9C /* iHavaBeenTo */,
+				CE9A844D1DE44DDC008EBE9C /* SideMenu */,
+				CE9A844C1DE44DD4008EBE9C /* Maiin */,
+				CE9A84381DE44D31008EBE9C /* AppDelegate.h */,
+				CE9A84391DE44D31008EBE9C /* AppDelegate.m */,
+				CE9A843E1DE44D31008EBE9C /* Main.storyboard */,
+				CE9A84411DE44D31008EBE9C /* Assets.xcassets */,
+				CE9A84431DE44D31008EBE9C /* LaunchScreen.storyboard */,
+				CE9A0A8E1DFAAE39002564F0 /* GoogleService-Info.plist */,
+				CE9A84461DE44D31008EBE9C /* Info.plist */,
+				CE9A84351DE44D31008EBE9C /* Supporting Files */,
+			);
+			path = TaiwanPuzzle2;
+			sourceTree = "<group>";
+		};
+		CE9A84351DE44D31008EBE9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE9A84361DE44D31008EBE9C /* main.m */,
+				CED8EF6F1DFA630700DD3D61 /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE9A844C1DE44DD4008EBE9C /* Maiin */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E818E1DF9695D00CC6EC4 /* MainView.h */,
+				CE8E818F1DF9695D00CC6EC4 /* MainView.m */,
+			);
+			name = Maiin;
+			sourceTree = "<group>";
+		};
+		CE9A844D1DE44DDC008EBE9C /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				CE9A84501DE45088008EBE9C /* SideMenu.storyboard */,
+				CE9A84521DE450D1008EBE9C /* SideMenu.h */,
+				CE9A84531DE450D1008EBE9C /* SideMenu.m */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
+		CE9A844E1DE44F06008EBE9C /* iHavaBeenTo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iHavaBeenTo;
+			sourceTree = "<group>";
+		};
+		CE9A844F1DE44F78008EBE9C /* iHavaNeverBeenTo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iHavaNeverBeenTo;
+			sourceTree = "<group>";
+		};
+		CE9A84551DE45159008EBE9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA6FC61E1F841C0094431C /* SpriteKit.framework */,
+				CE9A0A841DFAA7CB002564F0 /* Foundation.framework */,
+				CE9A0A821DFAA7C2002564F0 /* CoreGraphics.framework */,
+				CE9A0A801DFAA7B5002564F0 /* UIKit.framework */,
+				CE9A84561DE45159008EBE9C /* CoreLocation.framework */,
+				BE85A499A3C7641E536F6A7B /* Pods_TaiwanPuzzle2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEBA6FBC1E1F68340094431C /* img */ = {
+			isa = PBXGroup;
+			children = (
+				CECC57FF1DFAC32C009D6A0D /* Slice.png */,
+				CECC58001DFAC32C009D6A0D /* Slice2.png */,
+				CE9A0A961DFABEDA002564F0 /* g3.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+		CEBA6FBD1E1F80FD0094431C /* CityGame */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA6FBE1E1F813A0094431C /* CityGame.h */,
+				CEBA6FBF1E1F813A0094431C /* CityGame.m */,
+				CEBA6FC11E1F81550094431C /* CityGame.sks */,
+				CEBA6FC31E1F82330094431C /* GameViewController.h */,
+				CEBA6FC41E1F82330094431C /* GameViewController.m */,
+				CEBA6FD51E1FAF560094431C /* CityGameViewController.h */,
+				CEBA6FD61E1FAF560094431C /* CityGameViewController.m */,
+			);
+			name = CityGame;
+			sourceTree = "<group>";
+		};
+		CEBA6FC81E1FACB40094431C /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA6FC91E1FACCE0094431C /* BackgroundSound.mp3 */,
+				CEBA6FCA1E1FACCE0094431C /* No.mp3 */,
+				CEBA6FCB1E1FACCE0094431C /* Result.mp3 */,
+				CEBA6FCC1E1FACCE0094431C /* ResultUp.mp3 */,
+				CEBA6FCD1E1FACCE0094431C /* StartGame.mp3 */,
+				CEBA6FCE1E1FACCE0094431C /* Yes.mp3 */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		CED8EF6B1DFA60FE00DD3D61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CED8EF6C1DFA615D00DD3D61 /* CityModel.h */,
+				CED8EF6D1DFA615D00DD3D61 /* CityModel.m */,
+				CE9A0A761DFA7812002564F0 /* CityList.plist */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE9A84311DE44D31008EBE9C /* TaiwanPuzzle2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9A84491DE44D31008EBE9C /* Build configuration list for PBXNativeTarget "TaiwanPuzzle2" */;
+			buildPhases = (
+				5914A089C149051F971C63A4 /* [CP] Check Pods Manifest.lock */,
+				CE9A842E1DE44D31008EBE9C /* Sources */,
+				CE9A842F1DE44D31008EBE9C /* Frameworks */,
+				CE9A84301DE44D31008EBE9C /* Resources */,
+				457DBC4667E8C97F2985278B /* [CP] Embed Pods Frameworks */,
+				60F84E0E3435678A8D95AAA4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaiwanPuzzle2;
+			productName = TaiwanPuzzle2;
+			productReference = CE9A84321DE44D31008EBE9C /* TaiwanPuzzle2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE9A842A1DE44D31008EBE9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = LiChen;
+				TargetAttributes = {
+					CE9A84311DE44D31008EBE9C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = VBE7MKN5GU;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CE9A842D1DE44D31008EBE9C /* Build configuration list for PBXProject "TaiwanPuzzle2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE9A84291DE44D31008EBE9C;
+			productRefGroup = CE9A84331DE44D31008EBE9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE9A84311DE44D31008EBE9C /* TaiwanPuzzle2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE9A84301DE44D31008EBE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBA6FD21E1FACCE0094431C /* ResultUp.mp3 in Resources */,
+				CE9A84511DE45088008EBE9C /* SideMenu.storyboard in Resources */,
+				CEBA6FD01E1FACCE0094431C /* No.mp3 in Resources */,
+				CE9A84451DE44D31008EBE9C /* LaunchScreen.storyboard in Resources */,
+				CEBA6FC21E1F81550094431C /* CityGame.sks in Resources */,
+				CECC58021DFAC32C009D6A0D /* Slice2.png in Resources */,
+				CEBA6FD41E1FACCE0094431C /* Yes.mp3 in Resources */,
+				CEBA6FD11E1FACCE0094431C /* Result.mp3 in Resources */,
+				CEBA6FD31E1FACCE0094431C /* StartGame.mp3 in Resources */,
+				CE9A84421DE44D31008EBE9C /* Assets.xcassets in Resources */,
+				CE9A0A971DFABEDA002564F0 /* g3.png in Resources */,
+				CEBA6FCF1E1FACCE0094431C /* BackgroundSound.mp3 in Resources */,
+				CECC58011DFAC32C009D6A0D /* Slice.png in Resources */,
+				CE9A84401DE44D31008EBE9C /* Main.storyboard in Resources */,
+				CE9A0A771DFA7812002564F0 /* CityList.plist in Resources */,
+				CE9A0A8F1DFAAE39002564F0 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		457DBC4667E8C97F2985278B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaiwanPuzzle2/Pods-TaiwanPuzzle2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5914A089C149051F971C63A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		60F84E0E3435678A8D95AAA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaiwanPuzzle2/Pods-TaiwanPuzzle2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE9A842E1DE44D31008EBE9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBA6FC01E1F813A0094431C /* CityGame.m in Sources */,
+				CEBA6FC51E1F82330094431C /* GameViewController.m in Sources */,
+				CE8E81901DF9695D00CC6EC4 /* MainView.m in Sources */,
+				CE9A843A1DE44D31008EBE9C /* AppDelegate.m in Sources */,
+				CE9A845A1DE452D2008EBE9C /* Init.m in Sources */,
+				CE9A84541DE450D1008EBE9C /* SideMenu.m in Sources */,
+				CED8EF6E1DFA615D00DD3D61 /* CityModel.m in Sources */,
+				CEBA6FD71E1FAF560094431C /* CityGameViewController.m in Sources */,
+				CE9A84371DE44D31008EBE9C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE9A843E1DE44D31008EBE9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9A843F1DE44D31008EBE9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE9A84431DE44D31008EBE9C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9A84441DE44D31008EBE9C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE9A84471DE44D31008EBE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE9A84481DE44D31008EBE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE9A844A1DE44D31008EBE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D23B7EB3978FAC770706460 /* Pods-TaiwanPuzzle2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VBE7MKN5GU;
+				INFOPLIST_FILE = TaiwanPuzzle2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiChen.TaiwanPuzzle2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TaiwanPuzzle2/TaiwanPuzzle2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CE9A844B1DE44D31008EBE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D2AC003C98871184163FA3 /* Pods-TaiwanPuzzle2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VBE7MKN5GU;
+				INFOPLIST_FILE = TaiwanPuzzle2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiChen.TaiwanPuzzle2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TaiwanPuzzle2/TaiwanPuzzle2-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE9A842D1DE44D31008EBE9C /* Build configuration list for PBXProject "TaiwanPuzzle2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9A84471DE44D31008EBE9C /* Debug */,
+				CE9A84481DE44D31008EBE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9A84491DE44D31008EBE9C /* Build configuration list for PBXNativeTarget "TaiwanPuzzle2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9A844A1DE44D31008EBE9C /* Debug */,
+				CE9A844B1DE44D31008EBE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE9A842A1DE44D31008EBE9C /* Project object */;
+}
