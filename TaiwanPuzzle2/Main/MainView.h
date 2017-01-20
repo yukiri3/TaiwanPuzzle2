@@ -10,5 +10,5 @@
 
 
 @interface MainView : UIViewController 
-
+-(void)upDateCompleteLabel;
 @end
