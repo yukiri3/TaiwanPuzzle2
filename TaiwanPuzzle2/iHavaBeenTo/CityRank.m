@@ -7,6 +7,7 @@
 //
 
 #import "CityRank.h"
+#import "UIModel.h"
 #import "CityModel.h"
 @interface CityRank ()
 {
@@ -18,16 +19,13 @@
     self.tabBarController.tabBar.hidden=NO;
     [self.navigationController popViewControllerAnimated:YES];
 }
--(void)addBackButton{
-    UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_back"] style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
-    newBackButton.tintColor=[UIColor whiteColor];
-    self.navigationItem.leftBarButtonItem = newBackButton;
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tabBarController.tabBar.hidden=YES;
     cityModel = [[CityModel alloc] init];
-    [self addBackButton];
+    self.navigationItem.rightBarButtonItem = [UIModel setBackButtonUI];
+    [self.navigationItem.rightBarButtonItem setAction:@selector(back:)];
     self.navigationItem.title = @"排行榜";
 }
 

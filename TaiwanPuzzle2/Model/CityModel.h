@@ -17,4 +17,5 @@
 +(NSString*)postCodeToCity:(NSInteger)postcode;
 +(NSString*)computePercentage: (int)city;
 +(int)upDateComplete: (NSMutableDictionary*)dict;
+
 @end

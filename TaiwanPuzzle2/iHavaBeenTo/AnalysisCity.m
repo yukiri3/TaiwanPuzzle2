@@ -8,6 +8,7 @@
 
 #import "AnalysisCity.h"
 #import "CityModel.h"
+#import "UIModel.h"
 #import "OBShapedButton.h"
 @interface AnalysisCity () <UIScrollViewDelegate>
 {
@@ -27,13 +28,6 @@
     self.tabBarController.tabBar.hidden=NO;
     [self.navigationController popViewControllerAnimated:YES];
 }
--(void)addBackButton{
-    UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_back"] style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
-    newBackButton.tintColor=[UIColor whiteColor];
-    self.navigationItem.leftBarButtonItem = newBackButton;
-}
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     _myView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.myScrollView.frame.size.width, self.myScrollView.frame.size.height)];
@@ -104,7 +98,8 @@
             [self.myView addSubview:cityBtn];
         }
     }
-    [self addBackButton];
+    self.navigationItem.rightBarButtonItem = [UIModel setBackButtonUI];
+    [self.navigationItem.rightBarButtonItem setAction:@selector(back:)];
     _myLabel.text = _cityName;
     [_myScrollView addSubview:_myView];
 }

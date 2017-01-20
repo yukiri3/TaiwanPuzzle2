@@ -406,7 +406,7 @@
 		CEB2A75B1E2DE6BB0073B1AB /* 基隆市.png in Resources */ = {isa = PBXBuildFile; fileRef = CEB2A75A1E2DE6BB0073B1AB /* 基隆市.png */; };
 		CEB2A75D1E2E02AB0073B1AB /* PostCode2.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEB2A75C1E2E02AB0073B1AB /* PostCode2.plist */; };
 		CEB77EB31E28DE0C00A3B249 /* rank_button.png in Resources */ = {isa = PBXBuildFile; fileRef = CEB77EB21E28DE0C00A3B249 /* rank_button.png */; };
-		CEBA6FC71E1F841C0094431C /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBA6FC61E1F841C0094431C /* SpriteKit.framework */; };
+		CEB96F821E31EB53006CDE43 /* UIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB96F811E31EB53006CDE43 /* UIModel.m */; };
 		CEBAE45F1E2CBA9A004806F1 /* CityRank.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE45E1E2CBA9A004806F1 /* CityRank.m */; };
 		CEC08DAD1E2DC7BB007D9CEB /* init_background.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC08DAC1E2DC7BB007D9CEB /* init_background.png */; };
 		CEC859311E260857003C5198 /* TaiwanMap.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC859301E260857003C5198 /* TaiwanMap.plist */; };
@@ -851,6 +851,8 @@
 		CEB2A75A1E2DE6BB0073B1AB /* 基隆市.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "基隆市.png"; path = "AllCityImage/基隆市.png"; sourceTree = "<group>"; };
 		CEB2A75C1E2E02AB0073B1AB /* PostCode2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PostCode2.plist; path = Model/PostCode2.plist; sourceTree = "<group>"; };
 		CEB77EB21E28DE0C00A3B249 /* rank_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rank_button.png; sourceTree = "<group>"; };
+		CEB96F801E31EB53006CDE43 /* UIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIModel.h; path = Model/UIModel.h; sourceTree = "<group>"; };
+		CEB96F811E31EB53006CDE43 /* UIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIModel.m; path = Model/UIModel.m; sourceTree = "<group>"; };
 		CEBA6FC61E1F841C0094431C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		CEBAE45D1E2CBA9A004806F1 /* CityRank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityRank.h; path = iHavaBeenTo/CityRank.h; sourceTree = "<group>"; };
 		CEBAE45E1E2CBA9A004806F1 /* CityRank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityRank.m; path = iHavaBeenTo/CityRank.m; sourceTree = "<group>"; };
@@ -900,7 +902,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBA6FC71E1F841C0094431C /* SpriteKit.framework in Frameworks */,
 				CE9A0A851DFAA7CB002564F0 /* Foundation.framework in Frameworks */,
 				CE9A0A831DFAA7C2002564F0 /* CoreGraphics.framework in Frameworks */,
 				CE9A0A811DFAA7B5002564F0 /* UIKit.framework in Frameworks */,
@@ -942,21 +943,14 @@
 		CE9A84341DE44D31008EBE9C /* TaiwanPuzzle2 */ = {
 			isa = PBXGroup;
 			children = (
-				CED144971E31B72300C4619B /* classes */,
-				CEC859341E262955003C5198 /* TaiwanPuzzle2.entitlements */,
-				CEBA6FBC1E1F68340094431C /* img */,
+				CED144A11E31C1B900C4619B /* Resources */,
+				CED144971E31B72300C4619B /* Classes */,
 				CEAABF961E2C613F00B13286 /* Init */,
 				CED8EF6B1DFA60FE00DD3D61 /* Model */,
+				CED144A01E31C19D00C4619B /* Other */,
 				CE9A844E1DE44F06008EBE9C /* Analysis */,
 				CE9A844D1DE44DDC008EBE9C /* SideMenu */,
-				CE9A844C1DE44DD4008EBE9C /* Maiin */,
-				CE9A84381DE44D31008EBE9C /* AppDelegate.h */,
-				CE9A84391DE44D31008EBE9C /* AppDelegate.m */,
-				CE9A843E1DE44D31008EBE9C /* Main.storyboard */,
-				CE9A84411DE44D31008EBE9C /* Assets.xcassets */,
-				CE9A84431DE44D31008EBE9C /* LaunchScreen.storyboard */,
-				CE9A0A8E1DFAAE39002564F0 /* GoogleService-Info.plist */,
-				CE9A84461DE44D31008EBE9C /* Info.plist */,
+				CE9A844C1DE44DD4008EBE9C /* Main */,
 				CE9A84351DE44D31008EBE9C /* Supporting Files */,
 			);
 			path = TaiwanPuzzle2;
@@ -965,19 +959,30 @@
 		CE9A84351DE44D31008EBE9C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEB2A75C1E2E02AB0073B1AB /* PostCode2.plist */,
+				CEC859301E260857003C5198 /* TaiwanMap.plist */,
+				CEC859321E260B6A003C5198 /* nowLocal.plist */,
+				CEC859341E262955003C5198 /* TaiwanPuzzle2.entitlements */,
+				CE9A84381DE44D31008EBE9C /* AppDelegate.h */,
+				CE9A84391DE44D31008EBE9C /* AppDelegate.m */,
+				CE9A84411DE44D31008EBE9C /* Assets.xcassets */,
+				CE9A84431DE44D31008EBE9C /* LaunchScreen.storyboard */,
+				CE9A0A8E1DFAAE39002564F0 /* GoogleService-Info.plist */,
+				CE9A84461DE44D31008EBE9C /* Info.plist */,
 				CE9A84361DE44D31008EBE9C /* main.m */,
 				CED8EF6F1DFA630700DD3D61 /* Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CE9A844C1DE44DD4008EBE9C /* Maiin */ = {
+		CE9A844C1DE44DD4008EBE9C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CE9A843E1DE44D31008EBE9C /* Main.storyboard */,
 				CE8E818E1DF9695D00CC6EC4 /* MainView.h */,
 				CE8E818F1DF9695D00CC6EC4 /* MainView.m */,
 			);
-			name = Maiin;
+			name = Main;
 			sourceTree = "<group>";
 		};
 		CE9A844D1DE44DDC008EBE9C /* SideMenu */ = {
@@ -1449,7 +1454,7 @@
 			name = img;
 			sourceTree = "<group>";
 		};
-		CED144971E31B72300C4619B /* classes */ = {
+		CED144971E31B72300C4619B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				CED1449D1E31B8E400C4619B /* M13ProgressView.h */,
@@ -1457,7 +1462,22 @@
 				CED144981E31B73C00C4619B /* M13ProgressViewImage.h */,
 				CED144991E31B73C00C4619B /* M13ProgressViewImage.m */,
 			);
-			name = classes;
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		CED144A01E31C19D00C4619B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		CED144A11E31C1B900C4619B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA6FBC1E1F68340094431C /* img */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		CED8EF6B1DFA60FE00DD3D61 /* Model */ = {
@@ -1465,9 +1485,8 @@
 			children = (
 				CED8EF6C1DFA615D00DD3D61 /* CityModel.h */,
 				CED8EF6D1DFA615D00DD3D61 /* CityModel.m */,
-				CEB2A75C1E2E02AB0073B1AB /* PostCode2.plist */,
-				CEC859301E260857003C5198 /* TaiwanMap.plist */,
-				CEC859321E260B6A003C5198 /* nowLocal.plist */,
+				CEB96F801E31EB53006CDE43 /* UIModel.h */,
+				CEB96F811E31EB53006CDE43 /* UIModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -2027,6 +2046,7 @@
 				CE9A845A1DE452D2008EBE9C /* Init.m in Sources */,
 				CE9A84541DE450D1008EBE9C /* SideMenu.m in Sources */,
 				CED8EF6E1DFA615D00DD3D61 /* CityModel.m in Sources */,
+				CEB96F821E31EB53006CDE43 /* UIModel.m in Sources */,
 				CE9A84371DE44D31008EBE9C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2157,6 +2177,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "TaiwanPuzzle2/TaiwanPuzzle2-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -2175,6 +2196,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TaiwanPuzzle2/TaiwanPuzzle2-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

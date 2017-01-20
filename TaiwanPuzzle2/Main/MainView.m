@@ -7,6 +7,7 @@
 //
 #import "CityModel.h"
 #import "MainView.h"
+#import "UIModel.h"
 #import "MMDrawerBarButtonItem.h"
 #import "UIViewController+MMDrawerController.h"
 #import<CoreLocation/CoreLocation.h>
@@ -14,7 +15,7 @@
 #import "M13ProgressViewImage.h"
 #import "SVProgressHUD.h"
 #import "OBShapedButton.h"
-
+#import "UIModel.h"
 @import Firebase;
 @interface MainView () <CLLocationManagerDelegate,UNUserNotificationCenterDelegate>
 {
@@ -51,7 +52,7 @@
     }
     [self checkSwitch];
     [self loadCityData];
-    [self setSwitch];
+    _mySwitch = [UIModel setSwitchUI:self.mySwitch];
     [self setTaiwanBar];
    
     
@@ -218,12 +219,6 @@
         [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
     }];
    
-}
--(void)setSwitch{
-    self.mySwitch.onTintColor = [UIColor colorWithRed:2.0/255 green:223.0/255 blue:130.0/255 alpha:1];
-    self.mySwitch.tintColor = [UIColor colorWithRed:255.0/255 green:81.0/255 blue:81.0/255 alpha:1];
-   self.mySwitch.layer.cornerRadius = 16;
-    self.mySwitch.backgroundColor = [UIColor colorWithRed:255.0/255 green:81.0/255 blue:81.0/255 alpha:1];
 }
 -(UIAlertController*)addAlert{
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"錯誤" message:@"您未開啟定位功能" preferredStyle:UIAlertControllerStyleAlert];

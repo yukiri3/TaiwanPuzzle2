@@ -161,6 +161,7 @@
                     <connections>
                         <segue destination="vCf-c7-yUf" kind="relationship" relationship="viewControllers" id="QOl-1X-tur"/>
                         <segue destination="Z1R-wE-TC9" kind="relationship" relationship="viewControllers" id="xNe-Uj-dyf"/>
+                        <segue destination="hML-mC-98V" kind="relationship" relationship="viewControllers" id="mSi-YN-ldS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgm-wO-hR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -186,6 +187,25 @@
             </objects>
             <point key="canvasLocation" x="672.5" y="154.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="KHV-H6-5rP">
+            <objects>
+                <viewController id="Lix-z5-ue4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O3i-sj-Qsr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oeo-1c-37r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OjX-Al-dKp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TNu-Yk-uCn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WxK-Ki-fLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="1699"/>
+        </scene>
         <!--城市詳情-->
         <scene sceneID="9Sl-ry-444">
             <objects>
@@ -203,7 +223,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pP5-je-Aha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.5" y="947.5"/>
+            <point key="canvasLocation" x="672.5" y="947.5"/>
         </scene>
         <!--Analysis-->
         <scene sceneID="OMh-si-h78">
@@ -306,7 +326,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mis-lD-p7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="673" y="948"/>
+            <point key="canvasLocation" x="1259.5" y="947.5"/>
         </scene>
         <!--Analysis City-->
         <scene sceneID="Eut-xJ-CFI">
@@ -395,7 +415,26 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47N-eR-0fQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1131" y="948"/>
+            <point key="canvasLocation" x="1717.5" y="947.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eZC-m5-nyr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hML-mC-98V" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="ela-PW-o2Q"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3wf-95-xNy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lix-z5-ue4" kind="relationship" relationship="rootViewController" id="Fpu-FU-Aea"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7pE-17-qq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="948"/>
         </scene>
     </scenes>
     <resources>
