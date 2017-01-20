@@ -98,8 +98,9 @@
             [self.myView addSubview:cityBtn];
         }
     }
-    self.navigationItem.rightBarButtonItem = [UIModel setBackButtonUI];
-    [self.navigationItem.rightBarButtonItem setAction:@selector(back:)];
+    self.navigationItem.leftBarButtonItem = [UIModel setBackButtonUI:self.navigationItem.leftBarButtonItem];
+    [self.navigationItem.leftBarButtonItem setTarget:self];
+    [self.navigationItem.leftBarButtonItem setAction:@selector(back:)];
     _myLabel.text = _cityName;
     [_myScrollView addSubview:_myView];
 }

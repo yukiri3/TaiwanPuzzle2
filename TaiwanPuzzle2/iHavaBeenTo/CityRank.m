@@ -24,8 +24,9 @@
     [super viewDidLoad];
     self.tabBarController.tabBar.hidden=YES;
     cityModel = [[CityModel alloc] init];
-    self.navigationItem.rightBarButtonItem = [UIModel setBackButtonUI];
-    [self.navigationItem.rightBarButtonItem setAction:@selector(back:)];
+    self.navigationItem.leftBarButtonItem = [UIModel setBackButtonUI:self.navigationItem.leftBarButtonItem];
+    [self.navigationItem.leftBarButtonItem setTarget:self];
+    [self.navigationItem.leftBarButtonItem setAction:@selector(back:)];
     self.navigationItem.title = @"排行榜";
 }
 

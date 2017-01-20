@@ -17,10 +17,12 @@
     mySwitch.backgroundColor = [UIColor colorWithRed:255.0/255 green:81.0/255 blue:81.0/255 alpha:1];
     return mySwitch;
 }
-+(UIBarButtonItem*)setBackButtonUI{
-    UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_back"] style:UIBarButtonItemStylePlain target:self action:nil];
-    newBackButton.tintColor=[UIColor whiteColor];
++(UIBarButtonItem*)setBackButtonUI: (UIBarButtonItem*)myBack{
+    myBack = [[UIBarButtonItem alloc] init];
+    [myBack setImage:[UIImage imageNamed:@"btn_back"]];
+    myBack.tintColor=[UIColor whiteColor];
 
-    return newBackButton;
+    return myBack;
 }
+
 @end

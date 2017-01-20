@@ -10,5 +10,5 @@
 #import <Foundation/Foundation.h>
 @interface UIModel : UIView
 +(UISwitch*)setSwitchUI: (UISwitch*)mySwitch;
-+(UIBarButtonItem*)setBackButtonUI;
++(UIBarButtonItem*)setBackButtonUI: (UIBarButtonItem*)myBack;
 @end

@@ -407,6 +407,8 @@
 		CEB2A75D1E2E02AB0073B1AB /* PostCode2.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEB2A75C1E2E02AB0073B1AB /* PostCode2.plist */; };
 		CEB77EB31E28DE0C00A3B249 /* rank_button.png in Resources */ = {isa = PBXBuildFile; fileRef = CEB77EB21E28DE0C00A3B249 /* rank_button.png */; };
 		CEB96F821E31EB53006CDE43 /* UIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB96F811E31EB53006CDE43 /* UIModel.m */; };
+		CEB96F851E31FB47006CDE43 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB96F841E31FB47006CDE43 /* OtherViewController.m */; };
+		CEB96F881E321129006CDE43 /* ContactUs.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB96F871E321129006CDE43 /* ContactUs.m */; };
 		CEBAE45F1E2CBA9A004806F1 /* CityRank.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE45E1E2CBA9A004806F1 /* CityRank.m */; };
 		CEC08DAD1E2DC7BB007D9CEB /* init_background.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC08DAC1E2DC7BB007D9CEB /* init_background.png */; };
 		CEC859311E260857003C5198 /* TaiwanMap.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC859301E260857003C5198 /* TaiwanMap.plist */; };
@@ -853,6 +855,10 @@
 		CEB77EB21E28DE0C00A3B249 /* rank_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rank_button.png; sourceTree = "<group>"; };
 		CEB96F801E31EB53006CDE43 /* UIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIModel.h; path = Model/UIModel.h; sourceTree = "<group>"; };
 		CEB96F811E31EB53006CDE43 /* UIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIModel.m; path = Model/UIModel.m; sourceTree = "<group>"; };
+		CEB96F831E31FB47006CDE43 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OtherViewController.h; path = Other/OtherViewController.h; sourceTree = "<group>"; };
+		CEB96F841E31FB47006CDE43 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OtherViewController.m; path = Other/OtherViewController.m; sourceTree = "<group>"; };
+		CEB96F861E321129006CDE43 /* ContactUs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactUs.h; path = Other/ContactUs.h; sourceTree = "<group>"; };
+		CEB96F871E321129006CDE43 /* ContactUs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactUs.m; path = Other/ContactUs.m; sourceTree = "<group>"; };
 		CEBA6FC61E1F841C0094431C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		CEBAE45D1E2CBA9A004806F1 /* CityRank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityRank.h; path = iHavaBeenTo/CityRank.h; sourceTree = "<group>"; };
 		CEBAE45E1E2CBA9A004806F1 /* CityRank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityRank.m; path = iHavaBeenTo/CityRank.m; sourceTree = "<group>"; };
@@ -1468,6 +1474,10 @@
 		CED144A01E31C19D00C4619B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				CEB96F831E31FB47006CDE43 /* OtherViewController.h */,
+				CEB96F841E31FB47006CDE43 /* OtherViewController.m */,
+				CEB96F861E321129006CDE43 /* ContactUs.h */,
+				CEB96F871E321129006CDE43 /* ContactUs.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -2035,11 +2045,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB96F881E321129006CDE43 /* ContactUs.m in Sources */,
 				CEBAE45F1E2CBA9A004806F1 /* CityRank.m in Sources */,
 				CECB1EAA1E287E22008E00C1 /* AnalysisCell.m in Sources */,
 				CECB1EA51E2879B9008E00C1 /* Analysis.m in Sources */,
 				CE8E81901DF9695D00CC6EC4 /* MainView.m in Sources */,
 				CEB2A4601E2DE0B40073B1AB /* AnalysisCity.m in Sources */,
+				CEB96F851E31FB47006CDE43 /* OtherViewController.m in Sources */,
 				CED1449F1E31B8E400C4619B /* M13ProgressView.m in Sources */,
 				CED1449A1E31B73C00C4619B /* M13ProgressViewImage.m in Sources */,
 				CE9A843A1DE44D31008EBE9C /* AppDelegate.m in Sources */,

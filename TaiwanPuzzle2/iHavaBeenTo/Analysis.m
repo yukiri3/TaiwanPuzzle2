@@ -37,11 +37,15 @@
     x=[CityModel upDateComplete:cityModel.cityData];
     self.ref = [[FIRDatabase database] reference];
     [SVProgressHUD show];
+  
     NSUserDefaults * user = [NSUserDefaults standardUserDefaults];
-    NSString *key = [user objectForKey:@"MyName"];
-    NSDictionary *post = @{@"City":[NSNumber numberWithInt:x-1]};
-    NSDictionary *childUpdates = @{[NSString stringWithFormat:@"/Rank/%@/", key]: post};
-    [_ref updateChildValues:childUpdates];
+    if ([[user objectForKey:@"CheckSwitch2"] boolValue]==YES) {
+        NSString *key = [user objectForKey:@"MyName"];
+        NSDictionary *post = @{@"City":[NSNumber numberWithInt:x-1]};
+        NSDictionary *childUpdates = @{[NSString stringWithFormat:@"/Rank/%@/", key]: post};
+        [_ref updateChildValues:childUpdates];
+    }
+
     FIRDatabaseQuery *queryOrderedByChild = [[self.ref child:@"Rank"]queryOrderedByValue];
     [queryOrderedByChild observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
         NSMutableDictionary * dict = snapshot.value;
